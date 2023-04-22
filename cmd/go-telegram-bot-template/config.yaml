@@ -1,0 +1,11 @@
+server:
+  host: "0.0.0.0"
+  port: ":8080"
+bot:
+  token: "<your telegram bot token>"
+  webhookLink: "<your webhook link>"
+database:
+  connectionURI: "postgres://telegrambot:botpassword@localhost:5432/telegrambot?sslmode=disable&pool_max_conns=100&pool_max_conn_lifetime=1h"
+migration:
+  # https://github.com/golang-migrate/migrate/blob/master/database/postgres/README.md
+  databaseUrl: "postgres://telegrambot:botpassword@localhost:5432/telegrambot?sslmode=disable&search_path=public&x-migrations-table=schema_migrations"
