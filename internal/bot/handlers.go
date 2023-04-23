@@ -23,6 +23,10 @@ func (b *Bot) UpdateRouter(upd tgbotapi.Update) {
 }
 
 func (b *Bot) CommandsHandler(command string, updLocal *model.UpdateLocal) tgbotapi.Chattable {
+	/*
+		your commands processing logic should be here
+		return <message>
+	*/
 	return commonanswers.UnknownCommand().BuildBotMessage(int64(updLocal.TelegramChatID))
 }
 

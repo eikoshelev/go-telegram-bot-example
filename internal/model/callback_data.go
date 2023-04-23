@@ -5,22 +5,25 @@ import (
 	"strings"
 )
 
+// view of callback data after decoding
 /*
 {
    "cmd_key":"link",
    "case":"create",
    "step":0,
-   "payload":"button 2 is pressed"
+   "payload":"button 2 is pressed" // optional
 }
 */
 
 type CallbackDataBot string
 
 // may will be need
+/*
 type PayloadData struct {
 	ObjectType string
 	ObjectID   string
 }
+*/
 
 type CallbackData struct {
 	CommandKey CommandKey
@@ -41,6 +44,7 @@ func (cd *CallbackData) Encode() string {
 	)
 }
 
+// this option of callback data is used to save its size, due to restrictions
 // "commandKey;case;step;payload" —> "link;create;0;online"
 
 func (cdb *CallbackDataBot) Decode() *CallbackData {

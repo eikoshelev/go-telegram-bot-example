@@ -5,15 +5,16 @@ import (
 )
 
 type Service struct {
-	Welcome *WelcomeService
+	Start   *Start
+	Profile *Profile
 	// list all your services here
 }
 
+// function to initialize all services
 func Init(repos *repository.Repository) *Service {
 	return &Service{
-		Welcome: &WelcomeService{
-			Welcome: repos.Welcome,
-		},
+		Start:   &Start{Start: repos.Start},
+		Profile: &Profile{Profile: repos.Profile},
 		// don't forget to inject them as a dependency
 	}
 }

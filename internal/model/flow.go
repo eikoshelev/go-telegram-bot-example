@@ -14,6 +14,8 @@ CommandFlow (starting a specific script (flow) for manipulating an object, is a 
 					|
 					Step (certain, specific step, action)
 
+
+An example of how the described flow looks like with one use case and one step:
 {
    "start":{
       "welcome":{
@@ -37,8 +39,6 @@ CommandFlow (starting a specific script (flow) for manipulating an object, is a 
 }
 */
 
-const DefaltUsecase Case = "DefaltUsecase"
-
 type (
 	Flow    map[CommandKey]Usecase
 	Usecase map[Case]Chain
@@ -60,6 +60,7 @@ type (
 	}
 )
 
+// here is just a way to get a handler at the service level
 func (flow Flow) Handle(cd *CallbackData, updLocal *UpdateLocal) (tgbotapi.Chattable, error) {
 	msg, err := flow[cd.CommandKey][cd.Case][cd.Step].Handler(updLocal)
 	if err != nil {
@@ -68,6 +69,7 @@ func (flow Flow) Handle(cd *CallbackData, updLocal *UpdateLocal) (tgbotapi.Chatt
 	return msg, nil
 }
 
+// a general function for assembling a bot message from the described local model
 func (msg Message) BuildBotMessage(chatID int64) tgbotapi.MessageConfig {
 	replyMessage := tgbotapi.NewMessage(chatID, msg.Text)
 	var buttonRows [][]tgbotapi.InlineKeyboardButton
@@ -85,6 +87,7 @@ func (msg Message) BuildBotMessage(chatID int64) tgbotapi.MessageConfig {
 	return replyMessage
 }
 
+// helper function for checking the size of the described callback data at the start of the application
 func (flow *Flow) ValidateCallbacksDataSize(logger *zap.Logger) {
 	for _, usecase := range *flow {
 		for _, chain := range usecase {
