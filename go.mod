@@ -1,4 +1,4 @@
-module github.com/eikoshelev/go-telegram-bot-template
+module github.com/eikoshelev/go-telegram-bot-example
 
 go 1.19
 

@@ -1,6 +1,6 @@
 package commonanswers
 
-import "github.com/eikoshelev/go-telegram-bot-template/internal/model"
+import "github.com/eikoshelev/go-telegram-bot-example/internal/model"
 
 func UnknownError() model.Message {
 	return model.Message{

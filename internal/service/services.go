@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/eikoshelev/go-telegram-bot-template/internal/repository"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/repository"
 )
 
 type Service struct {

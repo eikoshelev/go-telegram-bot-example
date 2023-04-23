@@ -3,19 +3,19 @@ package main
 import (
 	"flag"
 
-	"github.com/eikoshelev/go-telegram-bot-template/internal/bot"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/config"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/database"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/flow"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/logger"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/repository"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/service"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/bot"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/config"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/database"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/flow"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/logger"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/repository"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/service"
 
 	"go.uber.org/zap"
 )
 
 func main() {
-	configPath := flag.String("c", "./cmd/go-telegram-bot-template/config.yaml", "path to go-telegram-bot-template config")
+	configPath := flag.String("c", "./cmd/go-telegram-bot-example/config.yaml", "path to go-telegram-bot-example config")
 	flag.Parse()
 
 	logger := logger.GetLogger()

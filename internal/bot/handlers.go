@@ -1,8 +1,8 @@
 package bot
 
 import (
-	commonanswers "github.com/eikoshelev/go-telegram-bot-template/internal/messages/common-answers"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/model"
+	commonanswers "github.com/eikoshelev/go-telegram-bot-example/internal/messages/common-answers"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/model"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"go.uber.org/zap"

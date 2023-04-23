@@ -3,7 +3,7 @@ package database
 import (
 	"net/http"
 
-	"github.com/eikoshelev/go-telegram-bot-template/migrations"
+	"github.com/eikoshelev/go-telegram-bot-example/migrations"
 
 	"github.com/golang-migrate/migrate/v4"
 	_ "github.com/golang-migrate/migrate/v4/database/postgres" // driver for migration tool

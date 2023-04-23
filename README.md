@@ -1,1 +1,1 @@
-# go-telegram-bot-template
+# go-telegram-bot-example

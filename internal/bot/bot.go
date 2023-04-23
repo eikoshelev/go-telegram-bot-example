@@ -3,10 +3,10 @@ package bot
 import (
 	"net/http"
 
-	"github.com/eikoshelev/go-telegram-bot-template/internal/config"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/model"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/repository"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/service"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/config"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/model"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/repository"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/service"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"go.uber.org/zap"

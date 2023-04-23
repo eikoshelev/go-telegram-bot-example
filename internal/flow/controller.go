@@ -1,9 +1,9 @@
 package flow
 
 import (
-	"github.com/eikoshelev/go-telegram-bot-template/internal/messages/profile"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/model"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/service"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/messages/profile"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/model"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/service"
 )
 
 func Init(svc *service.Service) model.Flow {

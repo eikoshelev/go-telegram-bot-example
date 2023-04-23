@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/eikoshelev/go-telegram-bot-template/internal/model"
-	"github.com/eikoshelev/go-telegram-bot-template/internal/repository"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/model"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/repository"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )

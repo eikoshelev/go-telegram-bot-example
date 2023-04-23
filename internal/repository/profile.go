@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/eikoshelev/go-telegram-bot-template/internal/model"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/model"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 

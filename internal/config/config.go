@@ -3,7 +3,7 @@ package config
 import (
 	"os"
 
-	"github.com/eikoshelev/go-telegram-bot-template/internal/database"
+	"github.com/eikoshelev/go-telegram-bot-example/internal/database"
 
 	"gopkg.in/yaml.v3"
 )
