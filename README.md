@@ -24,14 +24,14 @@ After executing commands, the user interacts with a specific object and executio
 
 ```go
 model.Flow{
-	model.ProfileCommand: model.Usecase{
-		"create": model.Chain{
-			0: model.Action{
-				Handler: svc.Profile.Create,
-				Message: profile.Create(),
-			},
-		},
-	},
+  model.ProfileCommand: model.Usecase{
+    "create": model.Chain{
+      0: model.Action{
+        Handler: svc.Profile.Create,
+	Message: profile.Create(),
+      },
+    },
+  },
 }
 ```
 ```json
