@@ -17,19 +17,19 @@ CommandFlow (starting a specific script (flow) for manipulating an object, is a 
 
 An example of how the described flow looks like with one use case and one step:
 {
-   "start":{
-      "welcome":{
+   "profile":{
+      "create":{
          "0":{
             "handler": HandlerFunc(),
-            "message":"some text",
+            "message":"Click the button below to create a profile",
             "buttons":[
                {
-                  "name":"button name 1",
+                  "name":"Create profile",
                   "callback_data":{
-                     "cmd_key":"start",
-                     "case":"welcome",
+                     "cmd_key":"profile",
+                     "case":"create",
                      "step":0,
-                     "payload":"button 1 is pressed"
+                     "payload":""
                   }
                }
             ]
